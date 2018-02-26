@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="wap-font-scale" content="no">
+		<title>中普金服</title>
+        <script language="javascript">
+            function newClick() {
+               uitest("[{\"name\":\"令狐冲\",\"gender\":\"male\",\"age\":28,\"iconUrl\":\"lhc.jpg\"},{\"name\":\"黄蓉\",\"gender\":\"female\",\"age\":17,\"iconUrl\":\"hr.jpg\"},{\"name\":\"乔峰\",\"gender\":\"male\",\"age\":36,\"iconUrl\":\"qf.jpg\"}]");
+            }
+            function oldClick() {
+                uitest2("[{\"name\":\"令狐冲\",\"gender\":\"male\",\"age\":28,\"iconUrl\":\"lhc.jpg\"},{\"name\":\"黄蓉\",\"gender\":\"female\",\"age\":17,\"iconUrl\":\"hr.jpg\"},{\"name\":\"乔峰\",\"gender\":\"male\",\"age\":36,\"iconUrl\":\"qf.jpg\"}]");
+            }
+        </script>
+		<style>
+			html,body,#url{
+				margin:0;padding:0;width:100%;height:100%;border:none;overflow:hidden;
+			}
+			a{
+				text-decoration:none;
+				padding:0.5rem 1rem;
+				color:#fff;
+				border-radius:0.2rem;
+				font-size:0.56rem;
+			}
+			.box{
+				text-align:center;
+				padding-top:50px;
+			}
+			.new{
+				background-color:#f00;
+			}
+			.old{
+				background-color:#00f;margin-left:3.2rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+            <input class="new" id = "new" type="button" value="WKWebview" onclick="newClick()" />
+            <input class="old" id = "old" type="button" value="UIWebview" onclick="oldClick()" />
+		</div>
+	</body>
+</html>
